@@ -35,3 +35,6 @@ function getState() {
 
 return {dispatch, getState}
 }
+
+let store = createStore(candyReducer) // createStore takes the reducer reducer as an argument
+store.dispatch({ type: '@@INIT' });
